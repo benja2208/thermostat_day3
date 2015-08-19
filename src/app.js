@@ -25,18 +25,6 @@ $ (document).ready(function(){
 		temperatureColor();
   })
 
-  $('#increase').mouseenter(function(){
-  	$(this).animate({
-           height: '+=10px'
-       }); 
-  });
-
-  $('#increase').mouseleave(function(){
-  	$(this).animate({
-           height: '-=10px'
-       }); 
-  });
-
   $("#decrease").click(function(){
 	  thermostat.decreaseTemperature();
 		temperature.innerHTML = thermostat.temperature;
@@ -56,38 +44,14 @@ $ (document).ready(function(){
 })
 
 
-
-
-
-
-// var temperature = document.getElementById('temperature');
-// temperature.innerHTML = thermostat.temperature;
-// temperatureColor();
-
-
-// var increase = document.getElementById('increase');
-// increase.onclick = function(){
-// 	thermostat.increaseTemperature();
-// 	temperature.innerHTML = thermostat.temperature;
-// 	temperatureColor();
-// };
-
-// var decrease = document.getElementById('decrease');
-// decrease.onclick = function(){
-// 	thermostat.decreaseTemperature();
-// 	temperature.innerHTML = thermostat.temperature;
-// 	temperatureColor();
-// };
-
-// var reset = document.getElementById('reset');
-// reset.onclick = function() {
-// 	thermostat.reset();
-// 	temperature.innerHTML = thermostat.temperature;
-// 	temperatureColor();
-// };
-
-// var power_saving_mode = document.getElementById('power_saving_mode');
-// power_saving_mode.onchange = function(){
-// 	thermostat.switchPowerSavingMode();
-// };
+// Weather.getCurrent("Kansas City", function(current) {
+//   console.log(
+//     ["currently:",current.temperature(),"and",current.conditions()].join(" ")
+//   );
+// });
+ 
+// Weather.getForecast("Kansas City", function(forecast) {
+//   console.log("forecast high: " + forecast.high());
+//   console.log("forecast low: " + forecast.low());
+// });
 

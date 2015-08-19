@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <title>Thermostat</title>
 <link rel="stylesheet" href="css/thermostat.css">
-<script src="src/jquery.js"></script>
-
-
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
 </head>
 
 <body>
@@ -14,12 +12,14 @@
     <div><span id="temperature"></span>°C</div>
     <button type= "button" id="increase">Increase</button>
     <button type="button" id="decrease">Decrease</button>
-    <button type="button" id="reset">Reset</button>    <form><input id="power_saving_mode" type="checkbox" checked>Power Saving Mode</form>
+    <button type="button" id="reset">Reset</button>
+    <button type="button" id="getWeather">Get Weather</button>    
+    <form><input id="power_saving_mode" type="checkbox" checked>Power Saving Mode</form>
   
-
- 
+  
   <script src="src/Thermostat.js"></script>
   <script src="src/app.js"></script>
+  <script src="src/weather.js"></script>
   </div>  
 </body>
 </html>
