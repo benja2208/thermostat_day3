@@ -1,18 +1,17 @@
   // Adding jasmine-jquery tests
 
-describe("Thermostat", fucntion() {
+describe("Thermostat", function() {
 
   beforeEach(function() {
-    jasmine.getFixtures().fixturesPath = "..";
+    jasmine.getFixtures().fixturesPath = ".";
     loadFixtures("index.html");
     $.holdReady(false);
   });
 
-  describe("temperature display", function() {
-    it("starts at 20", function() {
-      expect("#temperature").toContainText("20");
-    });
-  });
-
+  // describe("temperature display", function() {
+  //   it("starts at 20", function() {
+  //     expect("#temperature").toContainText("20");
+  //   });
+  // });
 
 });
