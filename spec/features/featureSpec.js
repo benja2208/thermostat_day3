@@ -8,10 +8,10 @@ describe("Thermostat", function() {
     $.holdReady(false);
   });
 
-  // describe("temperature display", function() {
-  //   it("starts at 20", function() {
-  //     expect("#temperature").toContainText("20");
-  //   });
-  // });
+  describe("temperature display", function() {
+    it("starts at 20", function() {
+      expect("#temperature").toContainText("20");
+    });
+  });
 
 });
