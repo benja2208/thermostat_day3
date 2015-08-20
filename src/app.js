@@ -48,8 +48,10 @@ $ (document).ready(function(){
 		var userCity= $("#city").val();
 		$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+ userCity +"&units=metric",function(result){
       	$("#weatherdata").html("City: " + result.name)
-      	$("#weatherdata").append("Weather: "+ result.weather.description);
-      	$("#weatherdata").append("Weather: "+ result.main.temp);
+      	$("#weatherdata").append("<br>Weather: "+ result.weather[0].main);
+      	$("#weatherdata").append("<br>Weather: "+ result.main.temp);
+      	// $("#temperature").html("<br>Temp: "+ result.main.temp);
+
     	});
 	});
 

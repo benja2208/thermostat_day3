@@ -4,22 +4,24 @@
   <meta charset="utf-8">
   <title>Thermostat</title>
 <link rel="stylesheet" href="css/thermostat.css">
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
 </head>
 
 <body>
-<section id="weatherdata"></section>
   <div id="container">
     <div><span id="temperature"></span>°C</div>
     <button type= "button" id="increase">Increase</button>
     <button type="button" id="decrease">Decrease</button>
     <button type="button" id="reset">Reset</button>  
     <form><input id="power_saving_mode" type="checkbox" checked>Power Saving Mode</form>
-    <form method="post"><input id="city" type="text"><button type="button" id="getWeather">Get Weather</button></form>
 
-     
-  
-  
+    <form method="post">
+    <input id="city" type="text">
+    <button type="button" id="getWeather">Get Weather</button>
+    </form>
+    <h6><section id="weatherdata"></section></h6>
+
+
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
   <script src="src/Thermostat.js"></script>
   <script src="src/app.js"></script>
   </div>  
